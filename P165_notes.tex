@@ -1,0 +1,132 @@
+%!TEX root = P165_notes.tex
+
+\documentclass[12pt]{article}
+\newcommand{\FlipTR}{UCR-TR-2022-FLIP-00X}
+\input{FlipPreamble}
+\input{FlipAdditionalHeader} %% Use this define additional macros
+\input{FlipPreambleEnd}
+
+\begin{document}
+
+%\thispagestyle{empty}		% If no TR#
+\thispagestyle{firststyle} 	% TR# on 1st page (pdfsync may fail on 1st page)
+
+\begin{center}
+	
+	{\large {P165:}}
+    {\Large \bf Introduction to Particle Physics}
+
+    \vskip .7cm
+
+%% SINGLE AUTHOR FORMAT
+%% --------------------
+	\textbf{Flip Tanedo} \\
+	\texttt{\footnotesize \email{flip.tanedo@ucr.edu}}
+
+	\vspace{-1em}
+    \begin{institutions}[1.5cm]
+    \footnotesize
+    {\it 
+	    Department of Physics \& Astronomy, 
+	    University of  California, Riverside, 
+	    {CA} 92521	    
+	    }    
+    \end{institutions}
+
+
+\end{center}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  ABSTRACT    %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+\noindent 
+This is a 10 week course on the theory of the Standard Model geared towards undergraduates who have taken at least the first of a three-quarter sequence in quantum mechanics. 
+%
+Last Compiled: \today
+\end{abstract}
+
+
+
+\small
+\setcounter{tocdepth}{2}
+\tableofcontents
+\normalsize
+%\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  THE CONTENT  %%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+To be filled in. 
+
+\section{Units and Natural Units}
+
+Imagine that you have three apples. This is a number (three) an a unit (apple). The meaning of the unit depends on what you're using it to measure. For example, if apples are \$1 each, then you could use an apple as a unit of currency. The way to do this is to simply \emph{multiply by one}:
+\begin{align}
+  (3\text{ apples}) \times \left(\frac{\text{\$ 1}}{\text{apple}}\right)
+  &= \$ 3 \ .
+\end{align}
+We have used the fact that the exchange rate is simply the statement that
+\begin{align}
+  1\text{ apple} &= \$1
+  & \Rightarrow &&
+  1 &= \frac{\$ 1}{1\text{ apple}} \ .
+\end{align}
+% You can do a similar thing for [kilo-]calories or any other conversion rate. 
+
+
+\begin{exercise} An apple is also roughly 100 dietary calories. If a friend buys me a coffee for \$2, does this mean that I can pay that friend back in 200 dietary calories? Comment on the relative merits of using apples as an exchange between monetary value and dietary energy.
+\end{exercise}
+
+\begin{exercise}
+At the time of this writing, one dollar is worth three-fourths of a British pound sterling: $\$1 = \textsterling0.75$. Write an expression that is equal to one that is a ratio of pound sterling to dollars. Use this ratio to convert the cost of two apples in the \acro{UK}. Is the exchange rate a good conversion factor? What if a friend of mine bought me coffee in Riverside, and I promised to pay them back in pound sterling in two years? 
+\end{exercise}
+
+
+All that matters is that the conversion is constant. Indeed, the constants of nature make very good `exchange rates.' For example, in particle physics we like to use \textbf{natural units}. This is the curious statement that
+\begin{align}
+  \hbar = c = 1 \ .
+\end{align}
+At face value, this doesn’t make sense. $\hbar$ has units of action, $c$ is a speed, and 1 is dimensionless. However, because nature gives us a \emph{fundamental} unit of action and a \emph{fundamental} unit of speed, we may use them as conversion factors (exchange rates),
+\begin{align}
+  c = 3 \times 10^{10}~\text{cm}/\text{s} \ .
+\end{align}
+If $c=1$, then this means
+\begin{align}
+  1 \text{ s} &=  3 \times 10^{10}~\text{cm} \ .
+\end{align}
+This, in turn, connects a unit of time to a unit of distance. By measuring time, the constant $c$ automatically gives us an associated distance. The physical relevance of the distance is tied to the nature of the fundamental constant: one second (or `light-second') is the distance that a photon travels in one second. Observe that this only works because $c$ is a constant. 
+
+
+
+
+
+ \section*{Acknowledgments}
+
+
+\acro{PT}\ thanks the Winter 2018, Winter 2020, and Spring 2022 cohorts of students for their patience as this course was developed. 
+%
+\acro{PT} thanks the Aspen Center for Physics (\acro{NSF} grant \#1066293) for its hospitality during a period where part of this work was completed. 
+%
+% \acro{PT} is supported by the \acro{DOE} grant \acro{DE-SC}/0008541.
+\acro{PT} is supported by a \acro{NSF CAREER} award.
+
+%% Appendices
+% \appendix
+
+
+%% Bibliography
+%\bibliographystyle{utcaps} 	% arXiv hyperlinks, preserves caps in title
+%\bibliographystyle{utphys} 	% arXiv hyperlinks
+% \bibliography{bib title without .bib}
+
+
+\end{document}
