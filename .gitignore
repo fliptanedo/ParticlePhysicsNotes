@@ -1,6 +1,7 @@
 # FLIP:
 !.gitignore
 *.pdf
+!/P164_notes.pdf
 !/figures/*
 OLD/
 
